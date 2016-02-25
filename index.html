@@ -66,12 +66,439 @@
 
 <div id='map' class='map'>Map</div>
 
-<!-- jQuery is required for this example. -->
-<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
 <script>
+var geojson =
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Human Solutions Family Shelter",
+        "Address": "16141 E Burnside Street",
+        "Phone Number": "Call 211 for more information",
+        "Hours": "Open 3:30 p.m. _ 7:30 a.m. daily",
+        "Info": "Serves:\rFamilies with children under 18\rWomen in third trimester\rNo turn away policy\rWalk-ins welcome",
+        "Notes": "",
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.496822,
+          45.522602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Safety off the Streets Shelter",
+        "Address": "435 NW Glisan Avenue",
+        "Phone Number": " 503-280-4700",
+        "Hours": "Open 5 p.m. - 8 a.m. daily",
+        "Info": "Serves:\rFemale-identified adults",
+        "Notes": "",
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.674879,
+          45.526747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Salvation Army Female Emergency Shelter (SAFES)",
+        "Address": "30 SW Second Avenue",
+        "Phone Number": "503-227-0180",
+        "Hours": "Open 6 p.m. - 8 a.m. daily",
+        "Info": "Serves:\rFemale-identified adults",
+        "Notes": "",
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.672108,
+          45.522743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Portland Rescue Mission",
+        "Address": "111 W Burnside Street",
+        "Phone Number": "503-906-7690",
+        "Hours": "Entry to year-round beds at 5:45 p.m.",
+        "Info": "Serves:\rAdult men",
+        "Notes": "Winter beds open at 8 p.m.",
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.67168,
+          45.523396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Sears Emergency Center",
+        "Address": "650 NW Irving Street (Bud Clark Commons)",
+        "Phone Number": "503-280-4700",
+        "Hours": "",
+        "Info": "Serves\rPriority for self-identified females over 18\rSecond priority for couples",
+        "Notes": "",
+        "Type": "State of Emergency Temporary Shelter",
+        "marker-color": "#ff0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.677301,
+          45.527791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Peace Shelter",
+        "Address": "650 NW Irving Street (Bud Clark Commons)",
+        "Phone Number": "503-280-4700",
+        "Hours": "",
+        "Info": "Serves\rSingle men over 18\rPriority given to men over 55 and veterans",
+        "Notes": "",
+        "Type": "State of Emergency Temporary Shelter",
+        "marker-color": "#ff0000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.677301,
+          45.527791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Bud Clark Commons",
+        "Address": "650 NW Irving Street",
+        "Phone Number": "503-280-4700",
+        "Hours": "Open 8:30 p.m. -  7 a.m.",
+        "Info": "Serves:\rAdults 18 and older\rWalk-ins welcome",
+        "Notes": "",
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.677301,
+          45.527791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "City Team Ministries",
+        "Address": "526 SE Grand Avenue",
+        "Phone Number": "503-231-9334",
+        "Hours": "Open 5:45 p.m. - 7 a.m.",
+        "Info": "Serves:\rAdult men\r$5 fee waived during emergencies\rWalk-ins welcome",
+        "Notes": "",
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.660405,
+          45.518944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Imago Dei Emergency Shelter",
+        "Address": "1302 SE Ankeny Street",
+        "Phone Number": "",
+        "Hours": "Open 8:30 p.m. - 7 a.m.",
+        "Info": "Serves\rFamilies\rSingle adults and youth\rPets allowed",
+        "Notes": "",
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.651994,
+          45.52192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Union Gospel Mission",
+        "Address": "15 NW Third Avenue",
+        "Phone Number": "971-678-3354",
+        "Hours": "",
+        "Info": "Serves:\r60 beds during severe weather only\rWalk-ins during severe weather",
+        "Notes": "",
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.673599,
+          45.52346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "JOIN Day Space",
+        "Address": "1435 NE 81st Avenue, Suite 100",
+        "Phone Number": "503-232-2031",
+        "Hours": "Open 10 a.m. - 3 p.m., Monday - Friday (closed second Friday of each month)",
+        "Info": "Amenities:\rRestrooms\rShowers\rPhone and internet access\rMail services\rFamily area with showers, hygiene items and referral services\rHaircuts\rAcupuncture\r\rWeekly partner services:\rDHS\rSSI\rVA\rSSVF\rOutside In medical van\rCascadia Behavioral Health\r\rServes all on a first come, first served basis",
+        "Notes": "",
+        "Type": "Day Services",
+        "marker-color": "#13f939"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.580319,
+          45.533312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Transition Projects",
+        "Address": "650 NW Irving Street",
+        "Phone Number": "503-280-4700",
+        "Hours": "Open 7 a.m. - 6:45 p.m., Monday - Friday; 8 a.m. - 3:45 p.m., Saturday - Sunday; Holidays\rClothing sign-up hours are 7 a.m. and 1:30 p.m.\rShower/laundry sign-up hours are 7 a.m.\rTB testing hours are 1:15 p.m. - 3:15 p.m., Mondays and Thursdays",
+        "Info": "Amenities:\rDaily lockers\rBathrooms\rClothing\rShowers\rLaundry services",
+        "Notes": "",
+        "Type": "Day Services",
+        "marker-color": "#13f939"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.677301,
+          45.527791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Rose Haven",
+        "Address": "627 NW 18th Avenue",
+        "Phone Number": "503-248-6364",
+        "Hours": "Open 8:30 a.m. - noon, 1:00 a.m. - 4:00 p.m., Monday - Friday",
+        "Info": "Amenities:\rMeals\rClothing and other necessities\rAdvocacy services and counseling\rServes women and their children",
+        "Notes": "",
+        "Type": "Day Services",
+        "marker-color": "#13f939"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.689671,
+          45.527624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Transition Projects",
+        "Address": "650 NW Irving Street",
+        "Phone Number": "",
+        "Hours": "7 a.m. - 6:45 p.m., Monday - Friday\r8 a.m. - 3:45 p.m., Saturday, Sunday, Holidays",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.677301,
+          45.527791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Operation Nightwatch",
+        "Address": "1432 SW 13th Avenue",
+        "Phone Number": "503-220-0438",
+        "Hours": "7 p.m. - 11 p.m., Thursday - Saturday",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.687618,
+          45.515622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Portland Rescue Mission",
+        "Address": "111 West Burnside",
+        "Phone Number": "",
+        "Hours": "24/7 drop-in",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.67168,
+          45.523396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Rose Haven",
+        "Address": "627 NW 18th Avenue",
+        "Phone Number": "",
+        "Hours": "8:30 a.m. - noon, and 1 p.m. - 4 p.m., Monday - Friday\r",
+        "Info": "Women and children only",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.689671,
+          45.527624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "SAFES",
+        "Address": "30 SW Second Avenue",
+        "Phone Number": "503-227-0810",
+        "Hours": "7 a.m. - 11 p.m., Monday - Sunday",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.672108,
+          45.522743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Union Gospel Mission",
+        "Address": "3 NW Third Avenue",
+        "Phone Number": "",
+        "Hours": "10 a.m. - 11:45 a.m., 2 p.m. - 4 p.m.",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.673589,
+          45.52332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "St. Andre Bessette Hospital Center, Downtown Chapel",
+        "Address": "601 W Burnside Street",
+        "Phone Number": "",
+        "Hours": "9 a.m. - 11:30 a.m., Monday - Friday",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.676743,
+          45.523265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Place": "Youths: Harry�s Mother",
+        "Address": "738 NE Davis Street",
+        "Phone Number": "503-233-8111\r1-800-914-9706",
+        "Hours": "24/7 for youths ages 9 - 17",
+        "Info": "",
+        "Notes": "",
+        "Type": "Drop-in Sites",
+        "marker-color": "#548cba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.657847,
+          45.524177
+        ]
+      }
+    }
+  ]
+}
+
+
 L.mapbox.accessToken = 'pk.eyJ1IjoibWFubnkiLCJhIjoiMzBCNHFQUSJ9.VQQ9ZSW7viFT1yLhLiWLSA';
 var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([45.521069, -122.651820], 12);
+    .setView([45.521069, -122.651820], 12)
+    .featureLayer.setGeoJSON(geojson);
 
 </script>
 

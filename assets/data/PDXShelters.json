@@ -10,7 +10,8 @@
         "Hours": "Open 3:30 p.m. _ 7:30 a.m. daily",
         "Info": "Serves:\rFamilies with children under 18\rWomen in third trimester\rNo turn away policy\rWalk-ins welcome",
         "Notes": "",
-        "Type": "Year-Round Shelter"
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
       },
       "geometry": {
         "type": "Point",
@@ -29,7 +30,8 @@
         "Hours": "Open 5 p.m. - 8 a.m. daily",
         "Info": "Serves:\rFemale-identified adults",
         "Notes": "",
-        "Type": "Year-Round Shelter"
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
       },
       "geometry": {
         "type": "Point",
@@ -48,7 +50,8 @@
         "Hours": "Open 6 p.m. - 8 a.m. daily",
         "Info": "Serves:\rFemale-identified adults",
         "Notes": "",
-        "Type": "Year-Round Shelter"
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
       },
       "geometry": {
         "type": "Point",
@@ -67,7 +70,8 @@
         "Hours": "Entry to year-round beds at 5:45 p.m.",
         "Info": "Serves:\rAdult men",
         "Notes": "Winter beds open at 8 p.m.",
-        "Type": "Year-Round Shelter"
+        "Type": "Year-Round Shelter",
+        "marker-color": "#548cba"
       },
       "geometry": {
         "type": "Point",
@@ -86,7 +90,8 @@
         "Hours": "",
         "Info": "Serves\rPriority for self-identified females over 18\rSecond priority for couples",
         "Notes": "",
-        "Type": "State of Emergency Temporary Shelter"
+        "Type": "State of Emergency Temporary Shelter",
+        "marker-color": "#ff0000"
       },
       "geometry": {
         "type": "Point",
@@ -105,7 +110,8 @@
         "Hours": "",
         "Info": "Serves\rSingle men over 18\rPriority given to men over 55 and veterans",
         "Notes": "",
-        "Type": "State of Emergency Temporary Shelter"
+        "Type": "State of Emergency Temporary Shelter",
+        "marker-color": "#ff0000"
       },
       "geometry": {
         "type": "Point",
@@ -124,7 +130,8 @@
         "Hours": "Open 8:30 p.m. -  7 a.m.",
         "Info": "Serves:\rAdults 18 and older\rWalk-ins welcome",
         "Notes": "",
-        "Type": "Severe Weather Only Emergency Shelter"
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
       },
       "geometry": {
         "type": "Point",
@@ -143,7 +150,8 @@
         "Hours": "Open 5:45 p.m. - 7 a.m.",
         "Info": "Serves:\rAdult men\r$5 fee waived during emergencies\rWalk-ins welcome",
         "Notes": "",
-        "Type": "Severe Weather Only Emergency Shelter"
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
       },
       "geometry": {
         "type": "Point",
@@ -162,7 +170,8 @@
         "Hours": "Open 8:30 p.m. - 7 a.m.",
         "Info": "Serves\rFamilies\rSingle adults and youth\rPets allowed",
         "Notes": "",
-        "Type": "Severe Weather Only Emergency Shelter"
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
       },
       "geometry": {
         "type": "Point",
@@ -181,7 +190,8 @@
         "Hours": "",
         "Info": "Serves:\r60 beds during severe weather only\rWalk-ins during severe weather",
         "Notes": "",
-        "Type": "Severe Weather Only Emergency Shelter"
+        "Type": "Severe Weather Only Emergency Shelter",
+        "marker-color": "#f224f2"
       },
       "geometry": {
         "type": "Point",
@@ -200,7 +210,8 @@
         "Hours": "Open 10 a.m. - 3 p.m., Monday - Friday (closed second Friday of each month)",
         "Info": "Amenities:\rRestrooms\rShowers\rPhone and internet access\rMail services\rFamily area with showers, hygiene items and referral services\rHaircuts\rAcupuncture\r\rWeekly partner services:\rDHS\rSSI\rVA\rSSVF\rOutside In medical van\rCascadia Behavioral Health\r\rServes all on a first come, first served basis",
         "Notes": "",
-        "Type": "Day Services"
+        "Type": "Day Services",
+        "marker-color": "#13f939"
       },
       "geometry": {
         "type": "Point",
@@ -219,7 +230,8 @@
         "Hours": "Open 7 a.m. - 6:45 p.m., Monday - Friday; 8 a.m. - 3:45 p.m., Saturday - Sunday; Holidays\rClothing sign-up hours are 7 a.m. and 1:30 p.m.\rShower/laundry sign-up hours are 7 a.m.\rTB testing hours are 1:15 p.m. - 3:15 p.m., Mondays and Thursdays",
         "Info": "Amenities:\rDaily lockers\rBathrooms\rClothing\rShowers\rLaundry services",
         "Notes": "",
-        "Type": "Day Services"
+        "Type": "Day Services",
+        "marker-color": "#13f939"
       },
       "geometry": {
         "type": "Point",
@@ -238,7 +250,8 @@
         "Hours": "Open 8:30 a.m. - noon, 1:00 a.m. - 4:00 p.m., Monday - Friday",
         "Info": "Amenities:\rMeals\rClothing and other necessities\rAdvocacy services and counseling\rServes women and their children",
         "Notes": "",
-        "Type": "Day Services"
+        "Type": "Day Services",
+        "marker-color": "#13f939"
       },
       "geometry": {
         "type": "Point",
@@ -257,7 +270,8 @@
         "Hours": "7 a.m. - 6:45 p.m., Monday - Friday\r8 a.m. - 3:45 p.m., Saturday, Sunday, Holidays",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -276,7 +290,8 @@
         "Hours": "7 p.m. - 11 p.m., Thursday - Saturday",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -295,7 +310,8 @@
         "Hours": "24/7 drop-in",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -314,7 +330,8 @@
         "Hours": "8:30 a.m. - noon, and 1 p.m. - 4 p.m., Monday - Friday\r",
         "Info": "Women and children only",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -333,7 +350,8 @@
         "Hours": "7 a.m. - 11 p.m., Monday - Sunday",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -352,7 +370,8 @@
         "Hours": "10 a.m. - 11:45 a.m., 2 p.m. - 4 p.m.",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -371,7 +390,8 @@
         "Hours": "9 a.m. - 11:30 a.m., Monday - Friday",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#000000"
       },
       "geometry": {
         "type": "Point",
@@ -390,7 +410,8 @@
         "Hours": "24/7 for youths ages 9 - 17",
         "Info": "",
         "Notes": "",
-        "Type": "Drop-in Sites"
+        "Type": "Drop-in Sites",
+        "marker-color": "#548cba"
       },
       "geometry": {
         "type": "Point",
